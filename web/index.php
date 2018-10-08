@@ -21,8 +21,10 @@ if (php_sapi_name() === 'cli-server' && is_file($filename)) {
 }
 
 // Verify that the API Key and API Secret are defined
-if (!(getenv('TOKBOX_API_KEY')) || !(getenv('TOKBOX_SECRET')))
-        die('You must define an TOKBOX_API_KEY and TOKBOX_SECRET in the run-demo file');
+if (!(getenv('TOKBOX_API_KEY'))
+        die('You must define an TOKBOX_API_KEY in the run-demo file');
+else if (!(getenv('TOKBOX_SECRET')))
+        die('You must define an TOKBOX_SECRET in the run-demo file');
 
 // Instantiate a Slim app
 $app = new Slim(array(
