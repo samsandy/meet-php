@@ -194,7 +194,7 @@
         },
         {
             "name": "opentok/opentok",
-            "version": "v2.2.3",
+            "version": "v4.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/opentok/OpenTok-PHP-SDK.git",
